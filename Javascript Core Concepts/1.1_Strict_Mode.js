@@ -1,7 +1,7 @@
 // 1.1
 // Fail silently vs Explicit errors
-'use strict';
 function f_strict() {
+    'use strict';
     'abc'.length = 5;
 }
 

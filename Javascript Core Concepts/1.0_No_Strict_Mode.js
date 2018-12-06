@@ -3,4 +3,3 @@
 // x is a global variable
 x = 3.14;
 console.log(x);
-

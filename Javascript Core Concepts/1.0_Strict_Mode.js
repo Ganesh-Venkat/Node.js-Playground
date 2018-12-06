@@ -4,8 +4,3 @@
 'use strict';
 x = 3.14;  // var x = 3.14 is correct
 console.log(x);
-
-function f_strict() {
-    'use strict';
-    'abc'.length = 5;
-}
