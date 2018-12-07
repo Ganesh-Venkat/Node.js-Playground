@@ -7,7 +7,7 @@
             // The scope of a variable is always the complete function (as opposed to the current block)
             var tmp = -x;
         }
-        console.log("Var: " + tmp);  // 3
+        console.log("Var: " + tmp);  // -3
     }
     foo();
 
