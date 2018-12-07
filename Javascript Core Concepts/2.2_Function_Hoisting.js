@@ -12,4 +12,4 @@ const notHoisted = function() {
 }
 
 // A subtle detail (that can show up in code with multiple "duplicate" declarations) is that 
-// Functions are hoisted first, and then variables
+// Functions are hoisted first, and then variables (YDKJS reference)

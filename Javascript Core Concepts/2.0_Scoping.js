@@ -13,6 +13,7 @@
 
     // let variables are block-scoped
     // `let`, is a signal that the variable may be reassigned
+    // let cannot be redeclared in the same scope
     let i = 0;
     if (true) {
         let i = 1;

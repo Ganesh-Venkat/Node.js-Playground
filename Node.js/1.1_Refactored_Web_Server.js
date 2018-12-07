@@ -1,6 +1,7 @@
+var globalVariable = 007;
 //server.js
 var http = require('http');
 // require the new module
-var handler = require('/home/ubuntu/Idea PaaS /node_playground/2.2 request-handler.js');
-var server = http.createServer(handler);
+var requestHandler = require('/home/ubuntu/Idea PaaS /node_playground/Node.js/1.2_Request_Handler.js');
+var server = http.createServer(requestHandler);
 server.listen(8080);
