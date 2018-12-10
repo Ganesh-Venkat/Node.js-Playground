@@ -23,8 +23,14 @@ http.createServer(function (request, response) {
         response.end('This is a POST request' + body);
     });
   } else if (request.method === 'PUT') {
+    let body = '';
     // parse request body
-    response.writeHead(200, {'Content-Type': 'text/plain'});
-    response.end('This is a PUT request. ');
+    request.on('data', chunk => {
+    body += chunk.toString(); // convert Buffer to string
+  });
+    request.on('end', () => {
+      //console.log(body);
+      response.end('This is a PUT request' + body);
+  });
   } 
 }).listen(8080); //the server object listens on port 8080 
