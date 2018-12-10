@@ -9,10 +9,10 @@ function isAdmin(request, response, next) {
     if (request.body.user === "admin") {
         return next();
     } else {
-        //var err = new Error("Only admin is authorized to access this page!");
-        //err.status = 401;
-        //response.end(err);
-        response.status(401).end();
+        var err = new Error("Only admin is authorized to access this page!");
+        err.status = 401;
+        response.end(err);
+        //response.status(401).end();
     }
 }
 
@@ -21,7 +21,10 @@ function isBrowserSupported(request, response, next) {
     if (browser === "firefox" || browser === "chrome") {
         return next();
     } else {
-        response.status(403).end();
+        var err = new Error('Your browser is not supported by this site');
+        err.status = 403;
+        return next(err);    
+        //response.status(403).end();
     }
 }
 
