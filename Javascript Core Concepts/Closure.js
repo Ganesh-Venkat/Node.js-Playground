@@ -1,3 +1,10 @@
-'use strict';
-x = 3.14;
-console.log(x);
+function makeFunc() {
+    var name = 'Mozilla';
+    function displayName() {
+      console.log(name);
+    }
+    return displayName;
+  }
+  
+  var myFunc = makeFunc();
+  myFunc();

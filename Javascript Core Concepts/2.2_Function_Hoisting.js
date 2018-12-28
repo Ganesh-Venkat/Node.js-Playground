@@ -7,7 +7,7 @@ function isItHoisted() {
 
 // Function expressions in JavaScript are NOT hoisted.
 notHoisted() // TypeError: notHoisted is not a function
-const notHoisted = function() {
+var notHoisted = function() {
   console.log('foo')
 }
 

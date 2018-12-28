@@ -8,7 +8,7 @@ var userDetails;
 function initialize() {
     // Setting URL and headers for request
     var options = {
-        url: 'https://api.github.com/users/Ganesh-Venkat',
+        url: 'https://api.github.com/users/SSilence',
         headers: {
             'User-Agent': 'request'
         }
