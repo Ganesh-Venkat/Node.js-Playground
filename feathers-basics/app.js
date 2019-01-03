@@ -1,7 +1,10 @@
 // Declare a constant feathers that has the feathersjs module 
+// Import the feathers js module (this is a package provided for the community)
+// can be accessed via npm
 const feathers = require('@feathersjs/feathers');
 // Execute / Call / Invoke this module & assign the return value 
 // - assuming the feathers application object to app
+// Initialize our app object by calling feathers function(module)
 const app = feathers();
 // app.use is generally used (in context of express)
 // to include middleware(custom/built-in) in your application at the APPLICATION level
